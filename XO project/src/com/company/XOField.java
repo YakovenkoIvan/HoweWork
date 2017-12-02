@@ -14,22 +14,5 @@ public class XOField {
 
     public static String getWinCombination() {
         return winCombination;
-
-    }
-
-    public static String findAllPosibleCombinations(int[] playersXOPositions) {
-        if(!isMoreThenThreeElements(playersXOPositions)){
-            return null;
-        }
-
-
-    }
-
-    public static boolean isMoreThenThreeElements(int[] playersXOPositions) {
-        if (playersXOPositions.length < 3) {
-            return false;
-        } else {
-            return true;
-        }
     }
 }
