@@ -78,62 +78,17 @@ public class CalciulGUI extends JFrame {
         }
 
     }
-    class ClearActionListener implements ActionListener{
-        public void actionPerformed (ActionEvent event){
+
+    class ClearActionListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
             label.setText("");
         }
     }
 
-    class InputActionListener implements ActionListener{
+    class InputActionListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-            //if (label.getText().contains("+") || label.getText().contains("-") || label.getText().contains("*") || label.getText().contains("/")) {
-            //    return;
-            //}
             String string = label.getText() + ((JButton) event.getSource()).getText();
-//            if (validateInputText(string)) {
-                label.setText(string);
-//            }
+            label.setText(string);
         }
-
-
-//        private boolean validateInputText(String expression) {
-//            if (expression == null) {
-//                return true;
-//            }
-//            if (expression.contains("+")) {
-//                String[] arrayString = expression.split("\\+");
-//                return validateNumbers(arrayString);
-//            }
-//            if (expression.contains("-")) {
-//                String[] arrayString = expression.split("\\-");
-//                return validateNumbers(arrayString);
-//            }
-//            if (expression.contains("*")) {
-//                String[] arrayString = expression.split("\\*");
-//                return validateNumbers(arrayString);
-//            }
-//            if (expression.contains("/")) {
-//                String[] arrayString = expression.split("\\/");
-//                return validateNumbers(arrayString);
-//            }
-//            return validateNumber(expression);
-//        }
-
-//        private boolean validateNumber(String string) {
-//            if (!string.contains(".")) {
-//                return true;
-//            }
-//            if (string.lastIndexOf('.') != string.indexOf('.')) {
-//                return false;
-//            }
-//            return true;
-//        }
-
-//        private boolean validateNumbers(String[] arrayString) {
-//            if (arrayString == null || arrayString.length != 2) {
-//                return false;
-//            }
-//            return validateNumber(arrayString[0]) && validateNumber(arrayString[1]);
-//        }
     }
 }

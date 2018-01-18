@@ -1,7 +1,5 @@
 package com.company;
 
-import com.sun.jndi.ldap.sasl.SaslInputStream;
-
 import java.util.Scanner;
 
 
